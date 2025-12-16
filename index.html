@@ -5,68 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ross Kudwitt - CPTO</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 2.5em; margin: 10px 0; }
-        h2 { font-size: 1.8em; margin: 20px 0 10px; }
-        h3 { font-size: 1.4em; margin: 10px 0; }
-        hr { border: 0; height: 1px; background: #ccc; margin: 30px 0; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .submit-btn { background: #f0f0f0; border: 1px solid #ccc; padding: 10px 20px; cursor: pointer; display: inline-flex; align-items: center; }
-        .submit-btn::after { content: " →"; margin-left: 5px; color: #999; } /* Simple arrow icon representation */
+        /* DARK MODE STYLING */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #0d1117; /* Dark background */
+            color: #c9d1d9; /* Light text */
+        }
+
+        h1 { 
+            font-size: 2.2em; 
+            margin: 10px 0; 
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        /* Sub-headline styling */
+        h1:nth-of-type(2) {
+            font-size: 1.8em;
+            color: #8b949e;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        h2 { 
+            font-size: 1.5em; 
+            margin: 40px 0 15px; 
+            color: #ffffff;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        h3 { 
+            font-size: 1.2em; 
+            margin: 30px 0 10px; 
+            color: #ffffff;
+        }
+
+        hr { 
+            border: 0; 
+            height: 1px; 
+            background: #30363d; 
+            margin: 30px 0; 
+        }
+
+        ul { 
+            list-style-type: disc; 
+            padding-left: 20px; 
+            color: #8b949e;
+        }
+
+        /* LINKS */
+        a { 
+            color: #58a6ff; /* Light Blue for dark mode */
+            text-decoration: none; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+
+        /* CONTACT FORM STYLES */
+        form {
+            background: #161b22;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background-color: #0d1117;
+            color: #ffffff;
+            font-size: 1rem;
+            box-sizing: border-box; /* Fixes padding width issues */
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #58a6ff;
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+        }
+
+        .submit-btn { 
+            background: #238636; /* GitHub Green */
+            color: white;
+            border: 1px solid rgba(240,246,252,0.1);
+            padding: 12px 24px; 
+            cursor: pointer; 
+            display: inline-flex; 
+            align-items: center; 
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: #2ea043;
+        }
     </style>
 </head>
 <body>
+
     <h1>Ross Kudwitt - CPTO (Chief Product and Technology Officer)</h1>
     <h1>Fast, Economical, Loved, Software Products</h1>
     <p>Deliver Innovative Software, Assemble Stellar Teams, Grow Enterprise Value</p>
+    
     <ul>
         <li><a href="#terms">Terms</a></li>
     </ul>
+    
     <hr>
 
-    <h2>0 1.</h2>
     <h3>Software Engineer</h3>
     <p>I started in <a href="https://www.ece.rutgers.edu/">engineering school</a> and interned at <a href="https://ibm.com">IBM</a> as a pre-professional writing <a href="https://www.perplexity.ai/search/what-is-cpu-microcode-ZWmLlSaoRyOG0NxMvIESXw">microcode</a>.</p>
 
-    <h2>0 2.</h2>
     <h3>Startup CTO @ GFI Group, Auctions.com, and Patron Technology</h3>
     <p><a href="https://www.gfigroup.com/">GFI Group</a> is a Wall Street Interdealer Broker and we sold our new issue bond auction trading platform to them. Auctions.com was a well funded startup that tried but failed to compete with eBay and our technology was stellar. Patron Technology (now <a href="https://leapevent.tech/">Leap</a>) is the system of record for many arts and cultural organizations and was sold to <a href="https://www.provequity.com/">Providence Equity</a>.</p>
 
-    <h2>0 3.</h2>
     <h3>CIO/CTO of <a href="https://timex.com">Timex</a> and <a href="https://www.nypl.org/">The New York Public Library</a></h3>
     <p>Hired by CEO's to turnaround technology teams of large, venerable enterprises.</p>
 
     <h2>Current Venture</h2>
-    <p>Autonomous City and Facility Operations</p>
-    <p>Chairman and Head of Product, Engineering, and Customer Success at venture-backed <a href="https://alo.ai">ALO.ai</a></p>
-
-    <h2>My Superpower is Innovation + Execution</h2>
-    <h3>Brainstorm with Ross</h3>
-    <p>$49 for 49 minutes</p>
-    <p>I've been a judge and mentor at the <a href="https://www.hbs.edu/newventurecompetition/business-track/judging">Harvard Business School New Venture Competition</a> for over 5 years. My consulting rate would be much higher. I'm doing this to help as many CEO's and entrepreneurs as possible, and it's fun for me.</p>
-    <ul>
-        <li>Brainstorming</li>
-        <li>Team Execution</li>
-        <li>Build vs. Buy</li>
-        <li>Sizing New Ideas</li>
-        <li>Coaching</li>
-    </ul>
-    <ul>
-        <li><a href="#terms">Terms</a></li>
-    </ul>
-    <hr>
+    <p>Birdverse</p>
+    <p>Private Aviation <a href="https://birdverse.ai">birdverse.ai</a></p>
 
     <h2>Contact</h2>
-    <form action="#" method="post"> <!-- Placeholder action; update with your form handler if needed (e.g., Formspree, Netlify Forms) -->
-        <!-- No specific fields were detectable in the original, so this is a minimal placeholder. Add fields like name/email/message if desired. -->
-        <button type="submit" class="submit-btn">Submit</button>
+    <form action="https://formspree.io/f/mzznlapr" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="john@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="How can we work together?"></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
     </form>
 
-    <section id="terms">
-        <h2>Terms</h2>
-        <!-- No specific content provided in the original; add your own terms if needed -->
-    </section>
-</body>
+    <div style="height: 50px;"></div> </body>
 </html>
